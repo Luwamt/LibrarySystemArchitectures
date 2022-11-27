@@ -1,0 +1,44 @@
+server:
+  port: 8015
+
+spring:
+  application:
+    name: BorrowingsService
+  zipkin:
+    base-url: http://localhost:9411/
+  sleuth:
+    sampler:
+      probability: 1 #100% (default = 10%)
+
+  main:
+    web-application-type: reactive
+  data:
+    mongodb:
+      port: 27017
+      database: librarySystem_db
+      host: localhost
+  kafka:
+    consumer:
+      group-id: gid
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: kafka
+
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+      value-serializer:  org.springframework.kafka.support.serializer.JsonSerializer
+
+eureka:
+  client:
+    serverUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+app:
+  topic: BookTopic
+

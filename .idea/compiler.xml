@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="EurekaServer" />
+        <module name="1" />
+        <module name="CustomerService" />
+        <module name="2" />
+        <module name="s" />
+        <module name="ClientTemplate" />
+        <module name="ConfigServer" />
+        <module name="m" />
+        <module name="CustomerService (1)" />
+        <module name="CloudGateWay" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="1" target="11" />
+      <module name="2" target="11" />
+      <module name="ClientTemplate" target="11" />
+      <module name="CloudGateWay" target="11" />
+      <module name="ConfigServer" target="11" />
+      <module name="CustomerService" target="11" />
+      <module name="CustomerService (1)" target="11" />
+      <module name="EurekaServer" target="11" />
+      <module name="m" target="11" />
+      <module name="s" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="1" options="-parameters" />
+      <module name="2" options="-parameters" />
+      <module name="ClientTemplate" options="-parameters" />
+      <module name="CloudGateWay" options="-parameters" />
+      <module name="ConfigServer" options="-parameters" />
+      <module name="CustomerService" options="-parameters" />
+      <module name="CustomerService (1)" options="-parameters" />
+      <module name="EurekaServer" options="-parameters" />
+      <module name="m" options="-parameters" />
+      <module name="s" options="-parameters" />
+    </option>
+  </component>
+</project>

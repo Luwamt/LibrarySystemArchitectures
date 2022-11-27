@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: ApiGateway
+
+  zipkin:
+    base-url: http://localhost:9411/
+  sleuth:
+    sampler:
+      probability: 1 #100% (default = 10%)
+
+  cloud:
+    gateway:
+      routes:
+        - id: bookCommandModule
+          uri: lb://BookCommandService                   #http://localhost:8011/
+          predicates:
+            - Path=/books/**
+        - id: bookQueryModule
+          uri: lb://BooksQueryService                     #http://localhost:8012/
+          predicates:
+            - Path=/bookQuery/**
+        - id: bookQuery2Module
+          uri: lb://BooksQueryService_2                                    #http://localhost:8013/
+          predicates:
+            - Path=/bookQuery/**
+        - id: borrowingModule
+          uri: lb://BorrowingsService                           #http://localhost:8015/
+          predicates:
+            - Path=/borrowings/**
+        - id: reviewModule
+          uri: lb://ReviewService                       #http://localhost:8014/
+          predicates:
+            - Path=/reviews/**
+        - id: customerModule
+          uri: lb://CustomerService   #http://localhost:8010/
+          predicates:
+            - Path=/customers/**
+
+eureka:
+  client:
+    serverUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
+
+server:
+  port: 8020

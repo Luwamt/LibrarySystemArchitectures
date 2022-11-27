@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BooksQueryService/1.iml" filepath="$PROJECT_DIR$/BooksQueryService/1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BooksQueryService_2/2.iml" filepath="$PROJECT_DIR$/BooksQueryService_2/2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClientTemplate/ClientTemplate.iml" filepath="$PROJECT_DIR$/ClientTemplate/ClientTemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CloudGateWay/CloudGateWay.iml" filepath="$PROJECT_DIR$/CloudGateWay/CloudGateWay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ConfigServer/ConfigServer.iml" filepath="$PROJECT_DIR$/ConfigServer/ConfigServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomerService/CustomerService.iml" filepath="$PROJECT_DIR$/CustomerService/CustomerService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BorrowingsService/CustomerService (1).iml" filepath="$PROJECT_DIR$/BorrowingsService/CustomerService (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/EurekaServer/EurekaServer.iml" filepath="$PROJECT_DIR$/EurekaServer/EurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibrarySystemArchitecture.iml" filepath="$PROJECT_DIR$/LibrarySystemArchitecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReviewService/m.iml" filepath="$PROJECT_DIR$/ReviewService/m.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BookCommandService/s.iml" filepath="$PROJECT_DIR$/BookCommandService/s.iml" />
+    </modules>
+  </component>
+</project>
